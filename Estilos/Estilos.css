@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(212, 156, 83);;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(216, 138, 36);
+}
+
+button:hover{
+    background-color: rgb(216, 138, 36);
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+header{
+    background-color: rgb(143, 88, 15);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover{
+    color: rgb(216, 138, 36);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(0, 0, 0);
+    background-image: url("../Imagenes/BK_Rebrand_Stills_Overview_1-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(0, 0, 0);
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#Somos-Burger-King{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Somos-Burger-King .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Descubre-las-Mejores-Hamburguesas{
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+#Descubre-las-Mejores-Hamburguesas .container{
+    text-align: center;
+}
+
+#Descubre-las-Mejores-Hamburguesas .container{
+    padding: 200px 0px;
+}
+
+#Descubre-las-Mejores-Hamburguesas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Descubre-las-Mejores-Hamburguesas p{
+    display: none;
+}
+
+#Descubre-las-Mejores-Hamburguesas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.whopper{
+    background-image: url("../Imagenes/BK_Web_WHOPPER_500X540px.png");
+    padding: 150px;
+}
+
+.big-king{
+    background-image: url("../Imagenes/BK_Web_Big-King_500X540px.png");
+    padding: 150px;
+}
+
+.long-chicken{
+    background-image: url("../Imagenes/BK_Web_LONGCHICKEN_500X540px.png");
+    padding: 150px;
+}
+
+#Pide_ya{
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 80vh;
+}
+
+#Pide_ya h2{
+    font-size: 9vm;
+}
+
+#Pide_ya button{
+    font-size: 1.75em;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+
+    
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #Somos-Burger-King .container{
+        display: flex;
+        justify-content: space-evenly;
+        background-color:rgb(216, 138, 36);
+    }
+
+    #Somo-Burger-King .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Somos-Burger-King h2{
+        margin-top: 0px;
+    }
+
+    #Somos-Burger-King .img-container{
+        background-image: url("../Imagenes/somos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 2000px;
+    }
+
+    #Descubre-las-Mejores-Hamburguesas .Hamburguesas{
+        display: flex;
+        justify-content: center;
+    }
+}
